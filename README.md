@@ -25,7 +25,8 @@ AND-Digital
  
  1. Backend-creation has backend_creation.tf file which is used to create s3 bucket and dynamodb table
     for the remote backend.Before running the main application this file has to be run.
-    Before executing below commands you have set "AWS Access Key ID" and "AWS Secret Access Key" using aws configuere
+    Before executing below commands you have set "AWS Access Key ID" and "AWS Secret Access Key" using aws configure
+    Also set the aws region.
     #commands:
     cd  backend-creation
     terraform init
@@ -46,6 +47,6 @@ AND-Digital
     terraform apply
     
    
-    
+  4. Once the infra is created please copy the Loadbalancer url and try to access the http url for the webpage.
     
     
